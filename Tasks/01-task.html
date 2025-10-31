@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <!-- <button id="testBtn">Test Button</button>
+    <button id="testBtn1">Test Button1</button>
 
-    <div onclick="alert('Hello world')">
-        Test Button
-    </div> -->
+    <button onclick="alert('Hello world')">
+        Test Button2
+    </button>
 
-      <button id="testBtn">Test Button</button>
+      <button id="testBtn3">Test Button3</button>
 
     <script>
         /*
@@ -24,15 +24,15 @@
         Обработчик должен выводить на экран сообщение Hello world.
         Добавьте обработчик тремя разными способами.
         */
-        // let btn = document.querySelector("#testBtn");
-        // btn.addEventListener("click", handler);
+        let btn = document.querySelector("#testBtn1");
+        btn.addEventListener("click", handler);
 
-        // function handler() {
-        //     alert("Hello world");
-        // }
+        function handler() {
+            alert("Hello world");
+        }
 
-        let btn = document.querySelector("#testBtn");
-        btn.onclick = showMessage();
+        let btn3 = document.querySelector("#testBtn3");
+        btn3.onclick = showMessage;
         function showMessage() {
             alert('Hello world');
         }
